@@ -1,0 +1,16 @@
+{
+    "name": "json-to-react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "jsonToReact.js",
+    "scripts": {
+        "start": "node app.js && prettier --write ./gen-components"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "eslint": "^8.11.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.5.1"
+    }
+}

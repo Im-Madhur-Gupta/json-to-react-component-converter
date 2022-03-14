@@ -1,0 +1,51 @@
+{
+    "componentName": "App",
+    "importsRequired": [
+        {
+            "name": "{useState, useEffect}",
+            "from": "react"
+        },
+        {
+            "name": "Axios",
+            "from": "axios"
+        }
+    ],
+    "propsRequired": ["prop1", "prop2"],
+    "statesAssociated": [
+        {
+            "name": "userData",
+            "type": "object",
+            "value": "{Name:Madhur, Age:21}"
+        }
+    ],
+    "generalVariablesAssociated": [
+        { "name": "x", "type": "array", "value": "[1,2,3]" },
+        { "name": "y", "type": "string", "value": "xyz" },
+        { "name": "z", "type": "number", "value": "1" }
+    ],
+    "useEffectCallsMade": [
+        {
+            "code": "z++;",
+            "dependencies": ["x", "y"]
+        }
+    ],
+    "functionsAssociated": [
+        {
+            "name": "func1",
+            "inputArgs": ["x", "y"],
+            "outputVal": "z",
+            "code": "z = x + y; console.log(z); return z;"
+        }
+    ],
+    "parentHTMLTag": "div",
+    "parentHTMLTagClasses": "main-cont",
+    "eventsAssociated": [
+        {
+            "eventName": "onClick",
+            "eventHandler": "()=>{func1(1,2);}"
+        }
+    ],
+    "inlineCSS": ".main-cont{border: 2px solid black;}",
+    "content": null,
+    "childComponents": []
+}

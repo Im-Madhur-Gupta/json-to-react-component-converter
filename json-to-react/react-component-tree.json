@@ -1,0 +1,182 @@
+{
+    "importsRequired": [
+        {
+            "name": "{useState, useEffect}",
+            "from": "react"
+        },
+        {
+            "name": "Axios",
+            "from": "axios"
+        }
+    ],
+    "componentName": "App",
+    "parentHTMLTag": "div",
+    "parentHTMLTagClasses": "main-cont",
+    "content": null,
+    "inlineCSS": "{color: 'blue'}",
+    "propsRequired": [{ "name": "a", "value": "a" }],
+    "statesAssociated": [
+        {
+            "name": "userData",
+            "value": "{Name:Madhur, Age:21}"
+        }
+    ],
+    "generalVariablesAssociated": [
+        { "name": "x", "value": "[1,2,3]" },
+        { "name": "y", "value": "foo" },
+        { "name": "z", "value": "1" }
+    ],
+    "useEffectCallsMade": [
+        {
+            "code": "z++;",
+            "dependencies": ["x", "y"]
+        },
+        {
+            "code": "console.log(z);",
+            "dependencies": []
+        }
+    ],
+    "functionsAssociated": [
+        {
+            "name": "func1",
+            "inputArgs": ["x", "y"],
+            "code": "return z = x + y;"
+        }
+    ],
+    "eventsAssociated": [],
+    "childComponents": [
+        {
+            "componentName": "Caraousel",
+            "importsRequired": [
+                {
+                    "name": "{useState}",
+                    "from": "react"
+                }
+            ],
+            "parentHTMLTag": "div",
+            "parentHTMLTagClasses": "main-cont",
+            "content": "",
+            "inlineCSS": "",
+            "propsRequired": [],
+            "statesAssociated": [{ "name": "leftCardIndex", "value": "1" }],
+            "generalVariablesAssociated": [
+                {
+                    "name": "cardDeatilsArr",
+                    "value": "[1,2,3]"
+                }
+            ],
+            "requestsMade": [],
+            "functionsAssociated": [],
+            "eventsAssociated": [],
+            "childComponents": [
+                {
+                    "componentName": "Card1",
+                    "parentHTMLTag": "div",
+                    "parentHTMLTagClasses": "main-cont",
+                    "content": "Home",
+                    "inlineCSS": "____",
+                    "propsRequired": [],
+                    "statesAssociated": [],
+                    "generalVariablesAssociated": [],
+                    "requestsMade": [],
+                    "functionsAssociated": [],
+                    "childComponents": []
+                },
+                {
+                    "componentName": "Card2",
+                    "parentHTMLTag": "div",
+                    "parentHTMLTagClasses": "main-cont",
+                    "content": "Events",
+                    "inlineCSS": "____",
+                    "propsRequired": [
+                        { "name": "cardTitle", "value": "cardTitle" },
+                        {
+                            "name": "cardModalDetails",
+                            "value": "cardModalDetails"
+                        }
+                    ],
+                    "statesAssociated": [],
+                    "generalVariablesAssociated": [],
+                    "requestsMade": [],
+                    "functionsAssociated": [],
+                    "childComponents": []
+                }
+            ]
+        },
+        {
+            "componentName": "Dashboard",
+            "parentHTMLTag": "div",
+            "parentHTMLTagClasses": "main-cont",
+            "content": "",
+            "inlineCSS": "____",
+            "propsRequired": [
+                {
+                    "name": "userData",
+                    "value": "userData"
+                }
+            ],
+            "statesAssociated": [],
+            "generalVariablesAssociated": [],
+            "requestsMade": [],
+            "functionsAssociated": [
+                {
+                    "name": "logout",
+                    "inputArgs": [],
+                    "code": "console.log();"
+                }
+            ],
+            "eventsAssociated": [],
+            "childComponents": [
+                {
+                    "componentName": "HomeBtn",
+                    "parentHTMLTag": "button",
+                    "parentHTMLTagClasses": "main-cont",
+                    "content": "Go to Home",
+                    "inlineCSS": "____",
+                    "propsRequired": [],
+                    "statesAssociated": [],
+                    "generalVariablesAssociated": [],
+                    "requestsMade": [],
+                    "functionsAssociated": [
+                        {
+                            "name": "goToHome",
+                            "inputArgs": [],
+                            "code": "console.log();"
+                        }
+                    ],
+                    "eventsAssociated": [
+                        {
+                            "name": "onClick",
+                            "handler": "goToHome"
+                        }
+                    ],
+                    "childComponents": []
+                },
+                {
+                    "componentName": "LogoutBtn",
+                    "parentHTMLTag": "button",
+                    "parentHTMLTagClasses": "main-cont",
+                    "content": "Logout",
+                    "inlineCSS": "____",
+                    "propsRequired": [
+                        {
+                            "name": "logout",
+                            "value": "logout"
+                        }
+                    ],
+                    "statesAssociated": [],
+                    "generalVariablesAssociated": [],
+                    "requestsMade": [],
+                    "functionsAssociated": [],
+                    "eventsAssociated": [
+                        {
+                            "name": "onClick",
+                            "handler": "logout"
+                        }
+                    ],
+                    "childComponents": []
+                }
+            ]
+        }
+    ]
+}

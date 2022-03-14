@@ -5,10 +5,12 @@
 - Format of the required JSON is present in JSONSyntax.md.
 
 ## Steps to start
-- cd to json-to-react folder
-- npm i
-- npm start
-
+```
+    cd ./json-to-react
+    npm i
+    npm start
+```
+  
 Generated React Component files will be added in /json-to-react/gen-components.
 
 ### Note - react-to-json app is not completed yet.
